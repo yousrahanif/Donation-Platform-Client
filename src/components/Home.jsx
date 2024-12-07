@@ -11,6 +11,7 @@ const Home = () => {
         <div className='w-11/12 mx-auto'>
             <Slider></Slider>
             {/* <AllCampaign></AllCampaign> */}
+            
             <AllCampaignHome></AllCampaignHome>
             <Stat></Stat>
             <Difference></Difference>
