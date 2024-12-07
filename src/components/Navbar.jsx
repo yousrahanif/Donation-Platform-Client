@@ -1,7 +1,7 @@
 
 
 
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.jpg'
 import { AuthContext } from '../providers/Authprovider';
@@ -11,7 +11,11 @@ import { Tooltip } from 'react-tooltip'
 const Navbar = () => {
   const {user, signOutUser} = useContext(AuthContext)
     
-    
+  const [theme, setTheme] = useState('light');
+  const handleToggleTheme=()=>{
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
+  }
   const handleSignOut=()=>{
     signOutUser()
     .then(()=>{
@@ -25,6 +29,7 @@ const Navbar = () => {
 
 
 <NavLink to="/" className="mr-2">Home</NavLink>
+
 <NavLink to="/allcampaigns" className="mr-2">All Campaign</NavLink>
 <NavLink to="/addCampaign" className="mr-2">Add Campaign</NavLink>
 
@@ -69,6 +74,10 @@ const Navbar = () => {
 
     return (
         <div className='mx-auto w-11/12'>
+          <div className='text-right m-4'> 
+<input onClick={handleToggleTheme} type="checkbox" value="synthwave" className="toggle theme-controller" />
+
+</div>
             <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -101,6 +110,7 @@ const Navbar = () => {
 <Link to="/">
 <img  src={logo} className='w-12 h-12 rounded-full mt-2' alt="" />  
 </Link>
+
 </div>
 {/* <NavLink className="text-red-500">FundTogether</NavLink> */}
 

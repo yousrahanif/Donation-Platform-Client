@@ -21,9 +21,9 @@ const {user} = useContext(AuthContext)
         const name = user.displayName;
 
        const updatedCampaign={photo,title,type,description,amount,deadline,email,name}
-       console.log(updatedCampaign)
+      //  console.log(updatedCampaign)
 
-       fetch(`http://localhost:5000/campaigns/${_id}`,{
+       fetch(`https://fundtogether-server.vercel.app/campaigns/${_id}`,{
         method:'PUT', 
         headers:{
             'content-type':'application/json'
@@ -32,7 +32,7 @@ const {user} = useContext(AuthContext)
        })
        .then(res=>res.json())
        .then(data=>{
-        console.log(data)
+        // console.log(data)
         if(data.modifiedCount>0){
             Swal.fire({
                 title: "Success!",

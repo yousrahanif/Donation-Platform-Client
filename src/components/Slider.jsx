@@ -27,10 +27,10 @@ const handleToggleTheme=()=>{
 <Marquee className='m-4'>
 🌟 Welcome to FundTogether: Empowering Ideas, Connecting Communities! Start your campaign today and make your vision a reality. 🌟
 </Marquee>
-<div className='text-center m-4'> 
+{/* <div className='text-center m-4'> 
 <input onClick={handleToggleTheme} type="checkbox" value="synthwave" className="toggle theme-controller" />
 
-</div>
+</div> */}
 
 <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative  w-full">

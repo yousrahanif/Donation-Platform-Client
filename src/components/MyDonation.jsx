@@ -10,7 +10,7 @@ const MyDonation = () => {
     useEffect(() => {
         if (user && user.email) {
          
-            fetch(`http://localhost:5000/mydonate?email=${user.email}`)
+            fetch(`https://fundtogether-server.vercel.app/mydonate?email=${user.email}`)
             .then((response) => response.json())
             .then((data) => setCampaigns(data))
         }

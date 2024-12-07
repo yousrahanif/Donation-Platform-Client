@@ -26,7 +26,7 @@ import MyDonation from "../components/MyDonation";
         {
         path: "/",
       element: <Home></Home>,
-      loader: ()=>fetch('http://localhost:5000/campaigns')
+      loader: ()=>fetch('https://fundtogether-server.vercel.app/campaigns')
 
 
         },
@@ -43,7 +43,7 @@ import MyDonation from "../components/MyDonation";
                 {
                   path:'/allcampaigns',
                   element: <AllCampaign></AllCampaign>,
-                  loader: ()=>fetch('http://localhost:5000/allcampaigns')
+                  loader: ()=>fetch('https://fundtogether-server.vercel.app/allcampaigns')
 
                 },
                 {
@@ -53,7 +53,7 @@ import MyDonation from "../components/MyDonation";
                       <DetailsPage></DetailsPage>
                     </PrivateRoute>,
 
-                    loader: ({params})=>fetch(`http://localhost:5000/allcampaigns/${params.id}`)
+                    loader: ({params})=>fetch(`https://fundtogether-server.vercel.app/allcampaigns/${params.id}`)
            
                     },
 
@@ -85,7 +85,7 @@ import MyDonation from "../components/MyDonation";
                   element: <PrivateRoute>
                   <UpdateCampaign></UpdateCampaign>
                   </PrivateRoute>,
-loader: ({params})=>fetch(`http://localhost:5000/updatecampaign/${params.id}`)
+loader: ({params})=>fetch(`https://fundtogether-server.vercel.app/updatecampaign/${params.id}`)
 
                   
                   

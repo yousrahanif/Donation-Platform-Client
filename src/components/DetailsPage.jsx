@@ -16,7 +16,7 @@ const DetailsPage = () => {
   const isDeadLineOver = currentDate > deadlineDate
 
   useEffect(() => {
-    fetch(`http://localhost:5000/donation-status?_id=${_id}&email=${user.email}`)
+    fetch(`https://fundtogether-server.vercel.app/donation-status?_id=${_id}&email=${user.email}`)
         .then((res) => res.json())
         .then((data) => {
             if (data.hasDonated) {
@@ -32,7 +32,7 @@ const DetailsPage = () => {
       }
       
 
-     fetch('http://localhost:5000/donate',{
+     fetch('https://fundtogether-server.vercel.app/donate',{
       method:'POST', 
       headers:{
           'content-type':'application/json'
@@ -41,7 +41,7 @@ const DetailsPage = () => {
      })
      .then(res=>res.json())
      .then(data=>{
-      console.log(data)
+      // console.log(data)
       if(data.insertedId){
           Swal.fire({
               title: "Thank You!",

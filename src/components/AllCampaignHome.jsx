@@ -8,7 +8,8 @@ const AllCampaignHome = () => {
 
     return (
         <div>
-                 <div>
+            <h2 className='text-center font-bold text-3xl'>Running Campaign</h2>
+            <div>
                <div className='flex justify-center items-center'>
           </div>
               <div className='flex justify-center  mb-4'>

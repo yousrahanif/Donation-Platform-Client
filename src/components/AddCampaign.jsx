@@ -17,9 +17,9 @@ const AddCampaign = () => {
         const name = user.displayName;
 
        const newCampaign={photo,title,type,description,amount,deadline,email,name}
-       console.log(newCampaign)
+      //  console.log(newCampaign)
 
-       fetch('http://localhost:5000/campaigns',{
+       fetch('https://fundtogether-server.vercel.app/campaigns',{
         method:'POST', 
         headers:{
             'content-type':'application/json'
@@ -28,7 +28,7 @@ const AddCampaign = () => {
        })
        .then(res=>res.json())
        .then(data=>{
-        console.log(data)
+        // console.log(data)
         if(data.insertedId){
             Swal.fire({
                 title: "Success!",

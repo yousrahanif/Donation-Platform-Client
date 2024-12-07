@@ -10,7 +10,7 @@
 //     useEffect(() => {
 //         if (user && user.email) {
          
-//             fetch(`http://localhost:5000/mycampaign?email=${user.email}`)
+//             fetch(`https://fundtogether-server.vercel.app/mycampaign?email=${user.email}`)
 //             .then((response) => response.json())
 //             .then((data) => setCampaigns(data))
 //             .catch((error) => console.error('Error fetching campaigns:', error));
@@ -92,7 +92,7 @@ const MyCampaign = () => {
 
     useEffect(() => {
         if (user && user.email) {
-            fetch(`http://localhost:5000/mycampaign?email=${user.email}`)
+            fetch(`https://fundtogether-server.vercel.app/mycampaign?email=${user.email}`)
                 .then((response) => response.json())
                 .then((data) => setCampaigns(data))
                 .catch((error) => console.error('Error fetching campaigns:', error));
