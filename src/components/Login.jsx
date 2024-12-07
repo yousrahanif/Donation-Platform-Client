@@ -38,7 +38,7 @@ Swal.fire({
       signInWithGoogle()
       .then(result=>{
         // console.log(result.user)
-        
+        //
        
         navigate("/")
         Swal.fire({
