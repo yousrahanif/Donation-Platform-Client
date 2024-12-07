@@ -7,12 +7,7 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // apiKey: "AIzaSyBvu4AZ8LUh8Qz7dZ1fs_SMBgOn9OUc-dg",
-  // authDomain: "fundtogether-37491.firebaseapp.com",
-  // projectId: "fundtogether-37491",
-  // storageBucket: "fundtogether-37491.firebasestorage.app",
-  // messagingSenderId: "817066078215",
-  // appId: "1:817066078215:web:10bad0f00e9d6e8e6f3aa2"
+  
 
 
   apiKey: import.meta.env.VITE_apiKey,
