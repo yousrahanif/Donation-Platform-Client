@@ -68,6 +68,7 @@ const MyCampaignCards = ({campaign, setCampaigns}) => {
     </div>
 
   </div>
+  
  
 </div>
         </div>
