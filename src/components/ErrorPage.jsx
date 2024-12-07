@@ -9,7 +9,7 @@ const ErrorPage = () => {
     <div>
       <h1 className="text-5xl font-bold">WRONG PATH!</h1>
       <p className="py-6 text-center">
-       Double Check your router 
+       Double Check your router.. 
       </p>
      
     </div>
