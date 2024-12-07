@@ -36,7 +36,8 @@ const handleToggleTheme=()=>{
   <div id="slide1" className="carousel-item relative  w-full">
     {/* <img
       src="https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      className="w-full" /> */}
+      className="w-full" /> 
+      */}
       <div
   className="hero min-h-screen"
   style={{
