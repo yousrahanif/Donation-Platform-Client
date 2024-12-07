@@ -37,6 +37,7 @@ const Navbar = () => {
                 {/* <div className="w-10  mr-2">
                   <img alt="User Avatar" src={user?.photoURL ||"https://i.ibb.co/kSMdsjQ/website.jpg"} className='w-12 h-12 rounded-full mt-2'/>
                 </div> */}
+                
 
 
 <div className="relative mr-4">
