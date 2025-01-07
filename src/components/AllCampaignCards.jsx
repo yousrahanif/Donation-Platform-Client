@@ -7,24 +7,29 @@ const AllCampaignCards = ({campaign}) => {
 
     return (
         <div >
-            <div className="card bg-base-100 w-96 shadow-xl">
-  <figure>
+            <div className="card bg-base-100  shadow-xl w-80 h-96">
+  <figure className="h-40 w-full overflow-hidden"  >
     <img
       src={photo}
-      alt="Shoes" />
+      alt="Shoes" 
+      className="w-full h-full object-cover"
+
+      />
   </figure>
   <div className="card-body">
     <h2 className="card-title">
      Title: {title}
-      <div className="badge badge-outline bg-blue-100">{type}</div>
+      {/* <div className="font-thin">Type: {type}</div> */}
     </h2>
     <p>Description: {description}</p>
     <p>Minimum Amount: ${amount}</p>
+    <p>Due: {deadline}</p>
+    <p>By: {name}</p>
 
-    <div className="card-actions justify-end">
+    {/* <div className="card-actions justify-end">
       <div className="badge badge-outline">Due: {deadline}</div>
       <div className="badge badge-outline">By: {name}</div>
-    </div>
+    </div> */}
     <NavLink to={`/allcampaigns/${_id}`} className="btn bg-blue-100">See More</NavLink>
 
   </div>
