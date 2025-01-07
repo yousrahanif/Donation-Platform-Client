@@ -39,7 +39,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yousrahanif/Donation-Platform.git
+git clone https://github.com/yousrahanif/Donation-Platform.git](https://github.com/yousrahanif/Donation-Platform-Client.git
 cd Donation-Platform-Client
 npm run dev
 git clone https://github.com/yousrahanif/Donation-Platform-Server.git
