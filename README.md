@@ -13,7 +13,7 @@
 - **User Authentication:** Secure login, registration, and user management.
 - **Responsive Design:** Optimized for mobile, tablet, and desktop views.
 - **Dark/Light Theme Toggle:** Toggle between dark and light modes for better user experience.
-- **Real-Time Data:** Instant updates when making or tracking donations.
+
 
 ## Key Technologies
 - **Frontend:** React, Tailwind CSS, DaisyUI
